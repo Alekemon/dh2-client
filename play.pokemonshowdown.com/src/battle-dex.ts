@@ -186,12 +186,12 @@ const Dex = new class implements ModdedDex {
 	resourcePrefix = (() => {
 		let prefix = '';
 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
-		return `${prefix}//${'play.pokemonshowdown.com'}/`;
+		return `${prefix}//${'raw.githubusercontent.com'}/Alekemon/plasma-showdown-sprites/master/`;
 	})();
 
 	fxPrefix = (() => {
 		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
-		return `${protocol}//${'play.pokemonshowdown.com'}/fx/`;
+		return `${protocol}//${'raw.githubusercontent.com'}/Alekemon/plasma-showdown-sprites/master/fx/`;
 	})();
 
 	loadedSpriteData = {xy: 1, bw: 0};
@@ -759,7 +759,7 @@ const Dex = new class implements ModdedDex {
 			num = BattlePokedex[id].num;
 		}
 		if (num < 0) num = 0;
-		if (num > 1025) num = 0;
+		if (num > 1034) num = 0;
 
 		if (window.BattlePokemonIconIndexes?.[id]) {
 			num = BattlePokemonIconIndexes[id];
